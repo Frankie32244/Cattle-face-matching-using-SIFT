@@ -1,2 +1,1 @@
-## cow_detection_using_SIFT
-
+# cow_detection_using_SIFT
