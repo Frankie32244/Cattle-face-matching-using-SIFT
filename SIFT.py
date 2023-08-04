@@ -192,10 +192,10 @@ def calculateResultsFor(i,j):
 
 
 
-# 测试 50 张 图片
-for i in range(1,19):
-  index = 0
-  print("The max Score is :" + str(getMaxScore(i)))
-  print("-----------------------------------------------------------")
-#   calculateResultsFor(index,i)
+# # 测试 50 张 图片
+# for i in range(1,19):
+#   index = 0
+#   print("The max Score is :" + str(getMaxScore(i)))
+#   print("-----------------------------------------------------------")
+# #   calculateResultsFor(index,i)
      
