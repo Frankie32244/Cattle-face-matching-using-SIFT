@@ -1,6 +1,5 @@
 import os
 
-
 # 将/data/test文件夹下的图片 rename -> 001.jpg  002.jpg
 folder_path = "./data/test"  # 替换为实际包含文件的文件夹路径
 
