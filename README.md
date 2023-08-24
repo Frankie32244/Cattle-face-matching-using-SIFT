@@ -1,15 +1,15 @@
 # Cow_face_matching_using_SIFT
 ### 1、项目目录
 ```linux
----data
+|---data
     |---images          牛脸底库图
     |---test            牛脸测试图
----pics
----init_file_names.py   用于格式化文件名
----README.md
----requirements.txt     
----SIFT.ipynb           用SIFT特征匹配算法跑的结果,保存到notebook里
----SIFT.py
+|---pics
+|---init_file_names.py   用于格式化文件名
+|---README.md
+|---requirements.txt     
+|---SIFT.ipynb           用SIFT特征匹配算法跑的结果,保存到notebook里
+|---SIFT.py
 ```
 
 ### 2、requirements
