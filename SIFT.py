@@ -2,6 +2,7 @@ import cv2
 import pickle
 import matplotlib.pyplot as plt
 import time 
+import matplotlib.image as mpimg
 
 sift = cv2.SIFT_create()
 
@@ -188,10 +189,10 @@ def calculateResultsFor(i,j):
     print(score)
     plt.imshow(plot),plt.show()
 
-
-
-
-if __name__ == '__main__':
+    
+    
+# -----------------------------------------------------------------------------------------------------------   
+def main():
     initImageList()
     initImageTestList()
     initImagePath()
@@ -209,3 +210,7 @@ if __name__ == '__main__':
         calculateResultsFor(index,i)
     print(total_time/50)
      
+if __name__ == "__main__":
+    main()
+
+## 该py文件打印不出对比图，最好用notebook运行，这是个代码样例文件
