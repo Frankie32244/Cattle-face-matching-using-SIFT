@@ -1,5 +1,5 @@
 # Cow_face_matching_using_SIFT
-### 1、foldeer
+### 1、folder
 ```linux
 ---data
     |---images          牛脸底库图
