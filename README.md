@@ -2,8 +2,8 @@
 ### 1、项目目录
 ```linux
 |---data
-    |---images          牛脸底库图
-    |---test            牛脸测试图
+    |---images           牛脸底库图
+    |---test             牛脸测试图
 |---pics
 |---init_file_names.py   用于格式化文件名
 |---README.md
