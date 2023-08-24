@@ -1,13 +1,14 @@
 import cv2
 import pickle
 import matplotlib.pyplot as plt
+import time 
 
 sift = cv2.SIFT_create()
 
-# 数据集-> 001.jpg 002.jpg ... 088.jpg
+# 数据集-> 001.jpg 002.jpg ... 103.jpg
 imageList = []
 
-# 测试集-> 001.jpg 002.jpg ... 018.jpg
+# 测试集-> 001.jpg 002.jpg ... 050.jpg
 image_test_List = []
 
 # 数据集文件路径-> ./data/images/xxx.jpg
@@ -16,11 +17,11 @@ imagesPath = []
 # 测试集文件路径-> ./data/test/xxx.jpg
 images_test_Path = []
 
-#利用computeSIFT()算出数据集的keypoints和descriptors 存放到数组中
+#利用computeSIFT()算出数据集的keypoints和descriptors 存放到keypoints[]和descriptors[]数组中
 keypoints = []
 descriptors = []
 
-# 利用computeSIFT()算出测试集的descriptors and keypoints 存放到数组中
+# 利用computeSIFT()算出测试集的descriptors and keypoints 存放到keypoints[]和descriptors[]数组中
 test_keypoints = []
 test_descriptors = []
 
@@ -28,7 +29,7 @@ test_descriptors = []
 score_array = []
 
 
-# 利用cv2.resize对图像进行缩放
+# 利用cv2.resize()对图像进行缩放
 def imageResizeTrain(image):
     maxD = 1024
     height,width = image.shape
@@ -58,13 +59,13 @@ def computeSIFT(image):
 
 
 def initImageList():
-    for i in range(1, 89):
+    for i in range(1, 104):
         filename = f"{i:03d}.jpg"
         imageList.append(filename)
 
 
 def initImageTestList():
-    for i in range(1, 16):
+    for i in range(1, 51):
         filename = f"{i:03d}.jpg"
         image_test_List.append(filename)
 
@@ -190,12 +191,15 @@ def calculateResultsFor(i,j):
 
 
 
-
-
-# # 测试 50 张 图片
-# for i in range(1,19):
-#   index = 0
-#   print("The max Score is :" + str(getMaxScore(i)))
-#   print("-----------------------------------------------------------")
-# #   calculateResultsFor(index,i)
+if __name__ == '__main__':
+    total_time = 0
+    for i in range(0,50):
+        start_time = time.time()
+        print(getMaxScore(i)) 
+        end_time = time.time()
+        running_time = end_time - start_time
+        total_time = total_time + running_time
+        print("Running time:", running_time, "seconds")
+        calculateResultsFor(index,i)
+    print(total_time/50)
      
