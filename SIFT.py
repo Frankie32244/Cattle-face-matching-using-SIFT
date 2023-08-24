@@ -168,7 +168,7 @@ def getScore(i,j):
 def getMaxScore(j):
     maxScore = 0
     global index
-    for i in range(0,87):
+    for i in range(0,103):
         score = getScore(i,j)
         score_array.append(score)
         index  =  i if score > maxScore  else index
@@ -192,6 +192,12 @@ def calculateResultsFor(i,j):
 
 
 if __name__ == '__main__':
+    initImageList()
+    initImageTestList()
+    initImagePath()
+    initImageTestPath()
+    getImagesKeypointsAndDes()
+    getTestImagesKeypointsAndDes()
     total_time = 0
     for i in range(0,50):
         start_time = time.time()
