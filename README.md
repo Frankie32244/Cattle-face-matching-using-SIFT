@@ -28,5 +28,5 @@ opencv_python==4.6.0.66
 
 有任何问题可联系 (liw964401@Outlook.com)
 
-#### 6、参考
+### 6、参考
 [SIFTImageSimilarity](https://github.com/adumrewal/SIFTImageSimilarity)
