@@ -1,4 +1,4 @@
-# Cow_face_matching_using_SIFT
+# Cattle-face-matching-using-SIFT
 ### 1、项目目录
 ```linux
 |---data
