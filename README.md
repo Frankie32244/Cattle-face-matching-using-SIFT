@@ -30,7 +30,7 @@ ipynb文件如果加载不了可以使用nbviwer  [SIFT.ipynb](https://nbviewer.
 
 ### 6、联系
 
-有任何问题可联系 (@liw964401@Outlook.com)
+有任何问题可联系 (liw964401@Outlook.com)
 
 ### 7、参考
 [SIFTImageSimilarity](https://github.com/adumrewal/SIFTImageSimilarity)
